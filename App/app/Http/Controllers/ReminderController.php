@@ -62,7 +62,7 @@ class ReminderController extends Controller
             return Redirect::to('/');
         }
 
-        if (($password != $passwordConf)) {
+        if ($password != $passwordConf) {
             Session::flash('error', 'Passwords must match.');
             return View::make('reminders.edit', ['id' => $id, 'code' => $code]);
         }

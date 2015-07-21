@@ -15,6 +15,8 @@
             {!! Form::password('password', array('placeholder'=>'password', 'required'=>'required')) !!}
             {!! Form::submit('Login') !!}
         {!! Form::close() !!}
+
+        {!! link_to_action('ReminderController@create', 'Forgot Password') !!}
     </div>
 </div>
 @stop

@@ -11,7 +11,7 @@
         @endif
 
         {!! Form::open(array('action' => 'SessionController@store')) !!}
-            {!! Form::text('login', null, array('placeholder'=>'Email', 'required'=>'required')) !!}
+            {!! Form::text('login', null, array('placeholder'=>'Email or Username', 'required'=>'required')) !!}
             {!! Form::password('password', array('placeholder'=>'password', 'required'=>'required')) !!}
             {!! Form::submit('Login') !!}
         {!! Form::close() !!}

@@ -12,6 +12,8 @@ class UserRepository implements UserRepositoryInterface {
     }
 
     public function findByLogin($login) {
-        return User::where('email', $login)->first();
+        return User::where('email', $login)
+          ->orWhere('username', $login)
+          ->first();
     }
 }

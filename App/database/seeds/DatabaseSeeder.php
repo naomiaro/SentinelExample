@@ -16,6 +16,7 @@ class DatabaseSeeder extends Seeder
 
         Sentinel::register([
             'email' => 'fake@gmail.com',
+            'username' => 'fake',
             'password' => 'test'
         ], true);
 

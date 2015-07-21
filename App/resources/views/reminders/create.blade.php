@@ -11,7 +11,7 @@
         @endif
 
         {!! Form::open(array('action' => 'ReminderController@store')) !!}
-            {!! Form::text('login', null, array('placeholder'=>'Email', 'required'=>'required')) !!}
+            {!! Form::text('login', null, array('placeholder'=>'Email or Username', 'required'=>'required')) !!}
             {!! Form::submit('Get Password Reset') !!}
         {!! Form::close() !!}
     </div>
